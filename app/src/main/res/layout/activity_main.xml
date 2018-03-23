@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_start"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="206dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/white_xxhdpi"
+        android:text="PLAY"
+        android:onClick="click_play"
+        android:textColor="@color/colorPrimary"
+
+
+         />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="206dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/white_xxhdpi"
+        android:onClick="click_exit"
+        android:text="EXIT"
+        android:textColor="@color/colorPrimary"
+        android:typeface="monospace"
+         />
+
+
+</LinearLayout>

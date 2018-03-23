@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blue"
+    android:orientation="vertical"
+    android:weightSum="8"
+    >
+    <LinearLayout
+
+        android:id="@+id/picture1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bear"
+            android:onClick="click_image"
+            android:tag="BEAR"
+            />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/image1"
+            android:layout_toRightOf="@id/image1"
+            android:background="@drawable/bird"
+            android:onClick="click_image"
+            android:tag="BIRD"
+            />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/picture2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/lion"
+            android:tag="LION"
+            android:onClick="click_image"
+            />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/image3"
+            android:layout_toRightOf="@id/image3"
+            android:background="@drawable/sun"
+            android:onClick="click_image"
+            android:tag="SUN"
+
+            />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btn_display"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/white_xxhdpi"
+            android:text="LION"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="240dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:background="@drawable/white_xxhdpi">
+
+
+    <LinearLayout
+        android:layout_width="246dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/smile"
+
+            />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Great!"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT->"
+            android:layout_marginLeft="160dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:background="@drawable/white_xxhdpi"
+            android:onClick="click_next"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
